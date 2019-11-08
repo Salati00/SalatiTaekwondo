@@ -1,0 +1,4 @@
+student name: Giorgio Salati
+student number: 653987
+student class: IT1C
+URL student GitHub repository: www.github.com/Salati00/SalatiTaekwondo
