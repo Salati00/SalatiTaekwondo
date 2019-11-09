@@ -19,25 +19,31 @@
                 PAYOFF
             </h2>
         </header>
-        <nav>
-            <ul>
-                <li>
-                    <a id="Section 1" href="#MainContent">Haarlem</a>
-                </li>
-                <li>
-                    <a id="Section 2" href="#SecondContent">Center</a>
-                </li>
-                <li>
-                    <a id="Section 3" href="#SportContent">Sports</a>
-                </li>
-                <li>
-                    <a id="Section 4" href="#ReferralContent">Referral</a>
-                </li>
-                <li>
-                    <a id="Section 5" href="#ContactContent">Contact Us</a>
-                </li>
-            </ul>
-        </nav>
+        <menuwrapper id="menuToggle">
+            <nav role="navigation">
+                <input type="checkbox" class="mobilefriendly" />
+                <span class="mobilefriendly"></span>
+                <span class="mobilefriendly"></span>
+                <span class="mobilefriendly"></span>
+                <ul id="menu">
+                    <li>
+                        <a id="Section 1" href="#MainContent">Haarlem</a>
+                    </li>
+                    <li>
+                        <a id="Section 2" href="#SecondContent">Center</a>
+                    </li>
+                    <li>
+                        <a id="Section 3" href="#SportContent">Sports</a>
+                    </li>
+                    <li>
+                        <a id="Section 4" href="#ReferralContent">Referral</a>
+                    </li>
+                    <li>
+                        <a id="Section 5" href="#ContactContent">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+        </menuwrapper>
         <flexContainer class="flex-row">
             <Haarlem id="MainContent">
                 <section>
@@ -178,7 +184,8 @@
             </Contact>
         </flexContainer>
     </flexContainer>
+
 </body>
-<!--&#xA9;-->
 
 </html>
+<!--&#xA9;-->
