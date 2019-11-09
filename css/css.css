@@ -2,10 +2,42 @@ html {
     scroll-behavior: smooth;
 }
 
-.flex-container {
+.flex-column {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
 }
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-around;
+}
+/*Phones/Tablets*/
+.flex-row>* {
+    flex: 100%;
+    background-color: grey;
+    border-radius: 15px;
+    flex-grow: 0;
+    align-content: space-around;
+    padding: 20px;
+    margin: 10px;
+}
+/*Desktops*/
+@media only screen and (min-width: 768px) {
+    .flex-row>* {
+        flex: 45%;
+        background-color: grey;
+        border-radius: 15px;
+        flex-grow: 0;
+        align-content: space-around;
+        padding: 20px;
+        margin: 10px;
+    }
+}
+
 
 nav {
     position: -webkit-sticky;
@@ -27,9 +59,9 @@ nav li {
 }
 
 
-nav li:last-child{
-    float:right;
-    background-color:purple,
+nav li:last-child {
+    float: right;
+    background-color: purple,
 }
 
 
