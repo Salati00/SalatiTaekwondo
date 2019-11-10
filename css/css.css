@@ -2,6 +2,15 @@ html {
     scroll-behavior: smooth;
 }
 
+
+
+.flex-images{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-around;
+}
+
 .flex-column {
     display: flex;
     flex-direction: column;
@@ -33,6 +42,10 @@ html {
     .mobilefriendly {
         display: none;
     }
+    
+    img{
+        max-width: 30%;
+    }
 
     .flex-row>* {
         flex: 45%;
@@ -48,8 +61,6 @@ html {
     header {
         font-size: 1.4em;
     }
-
-
 
     nav {
         position: -webkit-sticky;
@@ -73,11 +84,10 @@ html {
 
     nav li:last-child {
         float: right;
-        background-color: purple,
+        background-color: purple;
     }
 
-
-    li a {
+    nav li a {
         display: block;
         color: white;
         text-align: center;
@@ -85,7 +95,7 @@ html {
         text-decoration: none;
     }
 
-    li a:hover:not(.active) {
+    nav li a:hover:not(.active) {
         background-color: #111;
     }
 
@@ -93,24 +103,37 @@ html {
         background-color: #4CAF50;
     }
 
-
 }
 
 /*phone ONLY*/
 @media only screen and (max-width: 480px) {
-    header {
-        text-align: right;
+    .unfriendly{
+        display: none;
     }
 
-    a {
+    li>a {
         text-decoration: none;
         color: #232323;
-
+    
         transition: color 0.3s ease;
     }
 
-    a:hover {
-        color: tomato;
+    section>ul{
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    section>ul>li{
+        margin-bottom: 10px;
+    }
+
+    img{
+        max-width: 100%;
+    }
+
+    header {
+        text-align: right;
     }
 
     #menuToggle {
@@ -218,4 +241,15 @@ html {
     min-width: 100%;
     min-height: 100%;
     z-index: -10;
+}
+
+a{
+    color:#2699fb;
+    text-decoration: none;
+}
+a:hover{
+    color: tomato;
+}
+a:visited{
+    color:#2699fb;
 }
