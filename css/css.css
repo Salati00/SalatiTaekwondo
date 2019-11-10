@@ -2,11 +2,34 @@ html {
     scroll-behavior: smooth;
 }
 
-.flex-images{
+
+input:checked~#bannertext,
+input:checked {
+    display: none;
+    z-index: -2;
+}
+
+#bannertext {
+    background-color: red;
+}
+
+.banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+}
+
+.aside {
+    width: 45%;
+}
+
+.flex-images {
     display: flex;
     flex-wrap: wrap;
     align-content: space-around;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .flex-column {
@@ -40,12 +63,12 @@ html {
     .mobilefriendly {
         display: none;
     }
-    
-    img{
+
+    img {
         max-width: 30%;
     }
 
-    .long img{
+    .long img {
         max-width: 80%;
     }
 
@@ -89,7 +112,7 @@ html {
         background-color: purple;
     }
 
-    nav li a:not(.imeig) {
+    nav li a {
         display: block;
         color: white;
         text-align: center;
@@ -97,7 +120,7 @@ html {
         text-decoration: none;
     }
 
-    nav li a:hover:not(.active):not(.imeig) {
+    nav li a:hover:not(.active) {
         background-color: #111;
     }
 
@@ -109,21 +132,22 @@ html {
 
 /*phone ONLY*/
 @media only screen and (max-width: 480px) {
-    h1{
+    h1 {
         margin-left: 40%;
     }
-    .unfriendly{
+
+    .unfriendly {
         display: none;
     }
 
-    li>a:not(.imeig) {
+    li>a {
         text-decoration: none;
         color: #232323;
-    
+
         transition: color 0.3s ease;
     }
 
-    img{
+    img {
         max-width: 100%;
     }
 
@@ -158,7 +182,7 @@ html {
         -webkit-touch-callout: none;
     }
 
-    
+
     #menuToggle span {
         display: block;
         width: 33px;
@@ -238,24 +262,26 @@ html {
     z-index: -10;
 }
 
-a{
-    color:#2699fb;
+a {
+    color: #2699fb;
     text-decoration: none;
 }
-a:visited{
-    color:#2699fb;
+
+a:visited {
+    color: #2699fb;
 }
-a:hover{
+
+a:hover {
     color: tomato;
 }
 
-section>ul{
+section>ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
-section>ul>li{
+section>ul>li {
     margin-bottom: 10px;
     background-color: rgba(0.7, 0.7, 0.7, 0.6);
 }
