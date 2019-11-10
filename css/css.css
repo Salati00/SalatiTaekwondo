@@ -1,5 +1,11 @@
+@font-face {
+    font-family: 'Berlin Sans';
+    src: url('Media/Fonts/Berlin Sans FB Regular.ttf'); /* IE9 Compat Modes */
+}
+
 html {
     scroll-behavior: smooth;
+    font-family: Arial, ;
 }
 
 
