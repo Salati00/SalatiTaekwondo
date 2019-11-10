@@ -2,8 +2,6 @@ html {
     scroll-behavior: smooth;
 }
 
-
-
 .flex-images{
     display: flex;
     flex-wrap: wrap;
@@ -47,6 +45,10 @@ html {
         max-width: 30%;
     }
 
+    .long img{
+        max-width: 80%;
+    }
+
     .flex-row>* {
         flex: 45%;
         background-color: grey;
@@ -87,7 +89,7 @@ html {
         background-color: purple;
     }
 
-    nav li a {
+    nav li a:not(.imeig) {
         display: block;
         color: white;
         text-align: center;
@@ -95,7 +97,7 @@ html {
         text-decoration: none;
     }
 
-    nav li a:hover:not(.active) {
+    nav li a:hover:not(.active):not(.imeig) {
         background-color: #111;
     }
 
@@ -107,25 +109,18 @@ html {
 
 /*phone ONLY*/
 @media only screen and (max-width: 480px) {
+    h1{
+        margin-left: 40%;
+    }
     .unfriendly{
         display: none;
     }
 
-    li>a {
+    li>a:not(.imeig) {
         text-decoration: none;
         color: #232323;
     
         transition: color 0.3s ease;
-    }
-
-    section>ul{
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-    }
-
-    section>ul>li{
-        margin-bottom: 10px;
     }
 
     img{
@@ -247,9 +242,20 @@ a{
     color:#2699fb;
     text-decoration: none;
 }
+a:visited{
+    color:#2699fb;
+}
 a:hover{
     color: tomato;
 }
-a:visited{
-    color:#2699fb;
+
+section>ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+section>ul>li{
+    margin-bottom: 10px;
+    background-color: rgba(0.7, 0.7, 0.7, 0.6);
 }
