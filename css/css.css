@@ -2,7 +2,9 @@
     font-family: 'Berlin Sans';
     src: url('Media/Fonts/Berlin Sans FB Regular.ttf'); /* IE9 Compat Modes */
 }
-
+h1,h2{
+    color: white;
+}
 html {
     scroll-behavior: smooth;
     font-family: Arial, ;
@@ -16,7 +18,10 @@ input:checked {
 }
 
 #bannertext {
-    background-color: red;
+    background-color: rgba(179, 1, 1, 0.801);
+    
+    border-radius: 5px;
+
 }
 
 .banner {
@@ -25,6 +30,7 @@ input:checked {
     left: 0;
     right: 0;
     height: 50px;
+    border-radius: 5px;
 }
 
 .aside {
@@ -42,6 +48,7 @@ input:checked {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    background-color: rgba(1, 1, 1, 0.5);
 }
 
 .flex-row {
@@ -55,12 +62,13 @@ input:checked {
 /*Phones/Tablets*/
 .flex-row>* {
     flex: 100%;
-    background-color: grey;
+    background-color: rgba(1, 1, 1, 0.7);;
     border-radius: 15px;
     flex-grow: 0;
     align-content: space-around;
     padding: 20px;
     margin: 10px;
+    color: white;
 }
 
 
@@ -80,13 +88,14 @@ input:checked {
 
     .flex-row>* {
         flex: 45%;
-        background-color: grey;
+        background-color: rgba(1, 1, 1, 0.7);;
         border-radius: 15px;
         flex-grow: 0;
         align-content: space-around;
         padding: 20px;
         margin: 10px;
         flex-grow: 1;
+        color: white;
     }
 
     header {
@@ -104,7 +113,7 @@ input:checked {
         margin: 0;
         padding: 0;
         overflow: hidden;
-        background-color: #333;
+        background-color: rgba(1, 1, 1, 0.7);
         width: 100%;
     }
 
@@ -115,7 +124,8 @@ input:checked {
 
     nav li:last-child {
         float: right;
-        background-color: purple;
+        background-color: rgba(1, 1, 1, 0.7);
+        
     }
 
     nav li a {
@@ -130,9 +140,6 @@ input:checked {
         background-color: #111;
     }
 
-    .active {
-        background-color: #4CAF50;
-    }
 
 }
 
