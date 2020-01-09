@@ -84,6 +84,13 @@ form input[type=submit]:hover {
     justify-content: center;
 }
 
+.flex-images a {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: center;
+}
+
 .flex-column {
     display: flex;
     flex-direction: column;
