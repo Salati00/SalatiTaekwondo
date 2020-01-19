@@ -23,6 +23,7 @@
 h1,
 h2 {
     color: white;
+    margin-left: 20px;
 }
 
 html {
@@ -210,7 +211,10 @@ form button[type=submit]:hover {
 
 /*phone ONLY*/
 @media only screen and (max-width: 480px) {
-    h1 {
+    h1,
+    h2 {
+        color: white;
+        margin-right: 20px;
         margin-left: 40%;
     }
 
