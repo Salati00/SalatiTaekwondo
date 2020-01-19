@@ -4,6 +4,12 @@
     /* IE9 Compat Modes */
 }
 
+.validcss {
+    border: 0;
+    width: 88px;
+    height: 31px
+}
+
 .fakelist {
     list-style-type: none;
     padding: 50px;
@@ -21,7 +27,7 @@ h2 {
 
 html {
     scroll-behavior: smooth;
-    font-family: Arial, ;
+    font-family: Arial;
 }
 
 input:checked~#bannertext,
