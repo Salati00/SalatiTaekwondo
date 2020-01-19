@@ -4,6 +4,16 @@
     /* IE9 Compat Modes */
 }
 
+.fakelist {
+    list-style-type: none;
+    padding: 50px;
+}
+
+#menuToggle {
+    padding: 0;
+    margin: 0;
+}
+
 h1,
 h2 {
     color: white;
@@ -73,9 +83,9 @@ form input[type=submit]:hover {
     border-radius: 5px;
 }
 
-.aside {
+/*.aside {
     width: 45%;
-}
+}*/
 
 .flex-images {
     display: flex;
@@ -151,13 +161,13 @@ form input[type=submit]:hover {
         font-size: 1.4em;
     }
 
-    nav {
+    #menuToggle {
         position: -webkit-sticky;
         position: sticky;
         top: 0;
     }
 
-    nav ul {
+    #menuToggle ul {
         list-style-type: none;
         margin: 0;
         padding: 0;
@@ -166,18 +176,18 @@ form input[type=submit]:hover {
         width: 100%;
     }
 
-    nav li {
+    #menuToggle li {
         float: left;
     }
 
 
-    nav li:last-child {
+    #menuToggle li:last-child {
         float: right;
         background-color: rgba(1, 1, 1, 0.7);
 
     }
 
-    nav li a {
+    #menuToggle li a {
         display: block;
         color: white;
         text-align: center;
@@ -185,7 +195,7 @@ form input[type=submit]:hover {
         text-decoration: none;
     }
 
-    nav li a:hover:not(.active) {
+    #menuToggle li a:hover:not(.active) {
         background-color: #111;
     }
 
@@ -337,13 +347,18 @@ a:hover {
     color: tomato;
 }
 
-section>ul {
+article {
+    align-content: center;
+}
+
+
+.flex-row section>ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
-section>ul>li {
+.flex-row section>ul>li {
     margin-bottom: 10px;
     background-color: rgba(0.7, 0.7, 0.7, 0.6);
 }
